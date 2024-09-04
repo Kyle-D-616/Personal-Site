@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perssonal Portfolio Website</title>
+    <link rel="stylesheet" href="youtubeStyle.css">
+    <script src="https://kit.fontawesome.com/575113077c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="images/Kyle_logo.png" class="logo">
+            <ul id="sidemenu">
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="index.html#header">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li> -->
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Youtube API Project</p>
+            <h1>In this project i used python to interact with the Youtube API<br>
+                and pull in some data for some of my favorite 
+                youtube channels. 
+            </h1>
+        </div>
+      </div>  
+    </div>
+    <!-- -----------------Channel comparison------------------------- -->
+    <div id="Channel_comparison">
+        <div class="container">
+            <h1 class="sub-title">The Code <i class="fa-brands fa-python"></i></h1>
+            <div class="write_up">
+                <p class="write_up">
+                    After delving into the YouTube API documentation and conducting some preliminary data exploration, I focused on channel statistics.<br/>
+                    I began by importing the necessary libraries for this project, then configured the API key and channel IDs.
+                    <br/><br/>
+                    Next, I developed a function to iterate through the data returned by the API and organize it into a
+                    <br/>list. I instantiated this function with the appropriate variables to generate the all_data list and then
+                    <br/>structured it into a pandas DataFrame.
+                    <br/><br/>
+                    After performing some minor transformations, the data was ready to be visualized using Seaborn.
+                </p>
+            <P class="Code_1">
+                <img src="images/Code_1.png">
+            </P>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Subscribers')">Subscribers</p>
+                <p class="tab-links" onclick="opentab('Views')">Views</p>
+                <p class="tab-links" onclick="opentab('Total Videos')">Total Videos</p>
+            </div>
+            <div class="tab-contents active-tab" id="Subscribers">
+                <ul>
+                    <img src="images/Subscribers.png" alt="">
+                </ul>
+            </div>
+            <div class="tab-contents" id="Views">
+                <ul>
+                    <img src="images/Views.png" alt="">
+                </ul>
+            </div>
+            <div class="tab-contents" id="Total Videos">
+                <ul>
+                    <img src="images/Total-videos.png" alt="">
+                </ul>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------------Channel analysis----------------- -->
+<div id="Channel_analysis">
+    <div class="container">
+        <div class="row">
+            </div>
+            
+                <h1 class="sub-title">Channel analysis</h1>
+                <div class="write_up">
+                    <p>
+                    Let’s dive into the analysis of a single channel. First, I created a variable to specify the channel and its <br>
+                    ID. Then, I developed a function to retrieve the video IDs for all videos associated with that channel <br>
+                    and compile them into a list.
+                    <br><br>
+                    Using this list, I created another function to gather statistics for each video on the channel. With the <br>
+                    data collected, I organized it into a pandas DataFrame.
+                    <br><br>
+                    After making a few minor transformations, the data was ready for visualization with Seaborn.
+                </div>
+                <P class="Code_1">
+                    <img src="images/Code_2.png" class="Code_2">
+                    <img src="images/Code_3.png" class="Code_3">
+                    <img src="images/Code_4.png" class="Code_4">
+                </P>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Top 10 videos by views')">Top 10 videos by views</p>
+                    <p class="tab-links" onclick="opentab('Top 10 videos by Likes')">Top 10 videos by Likes</p>
+                    <p class="tab-links" onclick="opentab('Videos by month')">Videos by month</p>
+                </div>
+                <div class="tab-contents active-tab" id="Top 10 videos by views">
+                    <ul>
+                       <img src="images/Top-10-videos-Views.png" alt="">
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Top 10 videos by Likes">
+                    <ul>
+                       <img src="images/Top-10-videos-Likes.png" alt="">
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Videos by month">
+                    <ul>
+                        <img src="images/Videos-per-month.png" alt="">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------Conclusion----------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1>Conclusion</h1>
+        <div class="Conclusion">
+            <div class="Conclusion">
+                <p>
+                I thoroughly enjoyed working on this project. As someone with a deep passion for PC hardware, it <br>
+                was exciting to engage in data engineering and analysis on topics I love. The versatility of Python's <br>
+                libraries is truly remarkable. Additionally, I explored a similar project focused on a single channel and <br>
+                 visualized the data using Power BI. The YouTube API proved to be a powerful tool for uncovering <br>
+                 valuable insights, and I’m confident I’ll leverage it again in the future.
+                </p>
+            </div>
+<!-- --------------contact--------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-square-envelope"></i> kyled616@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 6232357211</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kyle-dukes-a1a848289"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/Kyle25391819"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://github.com/Kyle-D-616"><i class="fa-brands fa-square-github"></i>
+                </div>
+                <a href="images/Kyle Dukes Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kyle. Made with <i class="fa-solid fa-heart"></i> by Kyle Dukes</p>
+    </div>
+</div>
+
+</div>
+   <Script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    
+    
+    }
+   </Script> 
+
+   <script>
+        
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+   </script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxuQGp7cBaBUn8JdXuh0xTADTDD1ccSTAN62v8VaAx4YWHrVm6qbprI5W-zkbatomB8/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html> 
