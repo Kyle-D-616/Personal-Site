@@ -90,6 +90,7 @@
       border-radius: 15px;
   }
   .about-col-2{
+	font-size: 25px;
       flex-basis: 60%;
   }
   .sub-title{
